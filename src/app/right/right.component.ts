@@ -13,6 +13,7 @@ import { Component } from '@angular/core';
       justify-content: center;
       align-items: center;
       height: 100%;
+      font-family: 'Dosis', sans-serif;
     }
     img {
       max-width: 100%;

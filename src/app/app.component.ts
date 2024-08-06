@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
     .container {
       display: flex;
       height: 100vh;
+      font-family: 'Dosis', sans-serif;
     }
     .left, .right {
       flex: 1;

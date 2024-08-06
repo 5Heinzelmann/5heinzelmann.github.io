@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
   styles: [`
     .left-content {
       padding: 20px;
+      font-family: 'Dosis', sans-serif;
     }
   `]
 })

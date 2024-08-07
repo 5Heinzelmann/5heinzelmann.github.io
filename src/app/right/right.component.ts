@@ -12,7 +12,7 @@ import { Component, Input } from '@angular/core';
   styles: [`
     .right-content {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       height: 100%;
       width: 100%;
@@ -22,6 +22,7 @@ import { Component, Input } from '@angular/core';
       width: 400px;
       height: 400px;
       position: relative;
+      margin-left: 32px;
     }
     img {
       width: 100%;

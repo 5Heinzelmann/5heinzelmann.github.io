@@ -13,11 +13,13 @@ import { Component, Input } from '@angular/core';
       justify-content: center;
       align-items: center;
       height: 100%;
+      width: 100%;
       font-family: 'Dosis', sans-serif;
     }
     img {
-      max-width: 100%;
-      height: auto;
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
     }
   `]
 })

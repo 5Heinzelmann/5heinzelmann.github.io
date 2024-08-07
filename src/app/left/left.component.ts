@@ -3,15 +3,23 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-left',
   template: `
-    <div class="left-content">
-      <h1>{{ title }}</h1>
-      <p>{{ content }}</p>
+    <div class="left-container">
+      <div class="left-content">
+        <h1>{{ title }}</h1>
+        <p>{{ content }}</p>
+      </div>
     </div>
   `,
   styles: [`
+    .left-container {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
     .left-content {
       padding: 20px;
       font-family: 'Dosis', sans-serif;
+      text-align: left;
     }
   `]
 })

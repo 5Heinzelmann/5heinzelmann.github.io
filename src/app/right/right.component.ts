@@ -19,10 +19,10 @@ import { Component, Input } from '@angular/core';
       font-family: 'Dosis', sans-serif;
     }
     .image-container {
-      width: 400px;
-      height: 400px;
+      width: calc(100% - 64px);
+      height: 100%;
       position: relative;
-      margin-left: 32px;
+      margin: 32px;
     }
     img {
       width: 100%;

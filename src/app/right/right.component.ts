@@ -29,7 +29,7 @@ import { Component, Input } from '@angular/core';
       width: 600px;
       height: 600px;
       object-fit: cover;
-      border-radius: 16px;
+      border-radius: 8px;
     }
   `]
 })

@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-right',
   template: `
     <div class="right-content">
-      <img src="https://via.placeholder.com/300" alt="Placeholder image">
+      <img [src]="image" alt="Section image">
     </div>
   `,
   styles: [`
@@ -21,4 +21,6 @@ import { Component } from '@angular/core';
     }
   `]
 })
-export class RightComponent {}
+export class RightComponent {
+  @Input() image: string = 'https://via.placeholder.com/300';
+}

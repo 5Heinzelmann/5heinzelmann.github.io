@@ -22,6 +22,7 @@ import { Component, Input } from '@angular/core';
       width: 90%;
       height: 90%;
       position: relative;
+      aspect-ratio: 1 / 1;
     }
     img {
       position: absolute;

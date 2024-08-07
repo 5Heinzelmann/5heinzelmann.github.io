@@ -20,6 +20,8 @@ import { Component, Input } from '@angular/core';
     }
     .left-content {
       padding: 20px;
+      margin-left: 32px;
+      margin-right: 32px;
       font-family: 'Dosis', sans-serif;
       text-align: left;
     }

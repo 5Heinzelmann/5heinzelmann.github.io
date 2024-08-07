@@ -16,13 +16,14 @@ import { Component, Input } from '@angular/core';
       align-items: center;
       height: 100%;
       width: 100%;
+      padding: 32px;
+      box-sizing: border-box;
       font-family: 'Dosis', sans-serif;
     }
     .image-container {
-      width: calc(100% - 64px);
+      width: 100%;
       height: 100%;
       position: relative;
-      margin: 32px;
     }
     img {
       width: 100%;

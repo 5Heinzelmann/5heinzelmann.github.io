@@ -14,7 +14,9 @@ import { Component, Input } from '@angular/core';
     .left-container {
       display: flex;
       justify-content: flex-end;
+      align-items: center;
       width: 100%;
+      height: 100%;
     }
     .left-content {
       padding: 20px;

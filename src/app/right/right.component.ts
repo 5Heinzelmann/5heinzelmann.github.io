@@ -22,5 +22,5 @@ import { Component, Input } from '@angular/core';
   `]
 })
 export class RightComponent {
-  @Input() image: string = 'https://via.placeholder.com/300';
+  @Input() image!: string;
 }

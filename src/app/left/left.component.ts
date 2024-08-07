@@ -26,6 +26,6 @@ import { Component, Input } from '@angular/core';
   `]
 })
 export class LeftComponent {
-  @Input() title: string = 'Welcome';
-  @Input() content: string = 'This is some text content for the left side of the page.';
+  @Input() title!: string;
+  @Input() content!: string;
 }

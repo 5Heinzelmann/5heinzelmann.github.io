@@ -11,7 +11,7 @@ import { Component, Input } from '@angular/core';
   styles: [`
     .section {
       display: flex;
-      height: 55vh;
+      height: 65vh;
     }
     .left, .right {
       flex: 1;

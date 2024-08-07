@@ -4,7 +4,9 @@ import { Component, Input } from '@angular/core';
   selector: 'app-right',
   template: `
     <div class="right-content">
-      <img [src]="image" alt="Section image">
+      <div class="image-container">
+        <img [src]="image" alt="Section image">
+      </div>
     </div>
   `,
   styles: [`
@@ -16,10 +18,18 @@ import { Component, Input } from '@angular/core';
       width: 100%;
       font-family: 'Dosis', sans-serif;
     }
+    .image-container {
+      width: 90%;
+      height: 90%;
+      position: relative;
+    }
     img {
-      max-width: 90%;
-      max-height: 90%;
-      object-fit: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   `]
 })

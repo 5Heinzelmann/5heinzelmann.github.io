@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { MarkdownModule } from 'ngx-markdown';
 import { AppComponent } from './app.component';
-import { LeftComponent } from './left/left.component';
-import { RightComponent } from './right/right.component';
+import { ImageComponent } from './image.component';
 import { SectionComponent } from './section/section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeftComponent,
-    RightComponent,
+    ImageComponent,
     SectionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

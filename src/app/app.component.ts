@@ -5,19 +5,8 @@ import { Component } from '@angular/core';
   template: `
     <div class="container">
       <app-section
-        [title]="'Section 1'"
-        [content]="'This is the content for section 1'"
-        [image]="'https://loremflickr.com/600/600/yacht'">
-      </app-section>
-      <app-section
-        [title]="'Section 2'"
-        [content]="'This is the content for section 2'"
-        [image]="'https://loremflickr.com/600/600/yacht'">
-      </app-section>
-      <app-section
-        [title]="'Section 3'"
-        [content]="'This is the content for section 3'"
-        [image]="'https://loremflickr.com/600/600/yacht'">
+        [filename]="'section1.md'"
+        [image]="'https://loremflickr.com/600/600/computer'">
       </app-section>
     </div>
   `,

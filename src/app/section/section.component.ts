@@ -4,22 +4,28 @@ import { Component, Input } from '@angular/core';
   selector: 'app-section',
   template: `
     <div class="section">
-      <app-left class="left" [title]="title" [content]="content"></app-left>
-      <app-right class="right" [image]="image"></app-right>
+      <div class="content">
+        <markdown [src]="'assets/markdown/' + filename"></markdown>
+      </div>
+      <app-image class="image" [image]="image"></app-image>
     </div>
   `,
   styles: [`
     .section {
       display: flex;
       height: 65vh;
+      gap: 2rem;
     }
-    .left, .right {
+    .content, .image {
       flex: 1;
+    }
+    .content {
+      padding: 2rem;
+      overflow-y: auto;
     }
   `]
 })
 export class SectionComponent {
-  @Input() title: string = '';
-  @Input() content: string = '';
+  @Input() filename: string = '';
   @Input() image: string = '';
 }

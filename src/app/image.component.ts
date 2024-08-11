@@ -1,16 +1,16 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-right',
+  selector: 'app-image',
   template: `
-    <div class="right-content">
+    <div class="image-content">
       <div class="image-container">
         <img [src]="image" alt="Section image">
       </div>
     </div>
   `,
   styles: [`
-    .right-content {
+    .image-content {
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -33,6 +33,6 @@ import { Component, Input } from '@angular/core';
     }
   `]
 })
-export class RightComponent {
+export class ImageComponent {
   @Input() image!: string;
 }

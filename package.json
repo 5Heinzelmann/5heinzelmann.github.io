@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:ci": "ng build --configuration production --base-href /angular-minimal-setup/",
-    "build:gh-pages": "ng build --configuration production --base-href /angular-minimal-setup/"
+    "build:gh-pages": "ng build --configuration production --base-href /"
   },
   "private": true,
   "dependencies": {

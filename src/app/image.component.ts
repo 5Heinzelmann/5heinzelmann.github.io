@@ -24,12 +24,22 @@ import { Component, Input } from '@angular/core';
       width: 100%;
       height: 100%;
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     img {
-      width: 600px;
-      height: 600px;
-      object-fit: cover;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
       border-radius: 8px;
+    }
+    @media (max-width: 768px) {
+      .image-content {
+        padding: 16px;
+      }
     }
   `]
 })

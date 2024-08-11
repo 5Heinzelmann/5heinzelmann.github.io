@@ -6,13 +6,17 @@ import { Component } from '@angular/core';
     <div class="container">
       <app-section
         [filename]="'section1.md'"
-        [image]="'https://loremflickr.com/600/600/computer'">
+        [image]="'assets/mh_square.jpg'">
       </app-section>
     </div>
   `,
   styles: [`
     .container {
       font-family: 'Dosis', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
     }
   `]
 })

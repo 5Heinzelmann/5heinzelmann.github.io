@@ -16,6 +16,8 @@ import { Component, Input } from '@angular/core';
       min-height: 65vh;
       gap: 2rem;
       align-items: flex-start;
+      max-width: 100vw;
+      overflow-x: hidden;
     }
     .content, .image {
       flex: 1;
@@ -27,9 +29,11 @@ import { Component, Input } from '@angular/core';
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      box-sizing: border-box;
     }
     markdown {
       max-width: 80%;
+      box-sizing: border-box;
     }
     @media (max-width: 768px) {
       .section {
@@ -49,6 +53,8 @@ import { Component, Input } from '@angular/core';
       }
       markdown {
         max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
       }
     }
   `]
